@@ -4,6 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if ($_FILES['file']) {
         $fileUpload = $_FILES['file'];
+
         $uploadFile = new UploadFile($fileUpload);
 
         try {
